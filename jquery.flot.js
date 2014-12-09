@@ -2190,6 +2190,10 @@ Licensed under the MIT license.
                 drawTop = false;
             }
 
+            if (top === bottom) {
+              drawLeft = drawBottom = drawRight = drawTop = false;
+            }
+
             left = axisx.p2c(left);
             bottom = axisy.p2c(bottom);
             right = axisx.p2c(right);
